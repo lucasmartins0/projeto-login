@@ -21,6 +21,9 @@
         width: 65%;
         
     }
+    div.formulario > p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 1178px) {
@@ -33,7 +36,7 @@
     }
 
     section#login > div.imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
@@ -43,6 +46,15 @@
         width: 50%;
         height: 100%;
     }
+
+    div.formulario > h1 {
+        font-size: 1.7em;
+    }
+
+    div.formulario > p {
+        font-size: 1.1em;
+    }
+
     /*
     O "float" é uma propriedade CSS que permite que um elemento flutue ao lado de outros elementos, geralmente texto. Isso é útil para criar layouts de colunas ou posicionar elementos lado a lado.
 
