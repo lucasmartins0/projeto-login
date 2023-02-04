@@ -11,6 +11,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* 
+O uso do "border-box" pode ser útil para evitar problemas de layout, já que você pode definir o tamanho de um elemento sem se preocupar com o impacto das bordas e do padding.*/
 }
 
 body, html {
@@ -100,10 +102,24 @@ div.campo > input {
     border-radius: 8px;
     padding: 8px;
     transform: translateY(-12px); /*Qualquer transform sempre colocar ele em último*/
+    /* A função calc() é uma função CSS que permite fazer cálculos matemáticos no estilo de um elemento. Ela é útil quando você precisa calcular uma largura ou altura com base em valores dinâmicos, como a largura da tela ou o tamanho da fonte.
+
+A sintaxe para a função calc() é a seguinte:
+
+calc(expression)
+
+Onde "expression" é a expressão matemática a ser avaliada. Por exemplo:
+
+width: calc(100% - 40px);
+
+Isso irá definir a largura de um elemento como 100% menos 40 pixels.
+
+A função calc() é suportada em muitos navegadores modernos, incluindo Google Chrome, Mozilla Firefox e Microsoft Edge.*/
 }
 
 div.campo > input:focus-within {
     background-color: white;
+    /* O "focus-within" é uma pseudo-classe CSS que permite aplicar estilos a um elemento pai quando um dos seus descendentes estiver com foco. Isso é útil quando você quer alterar o estilo de um elemento pai quando um elemento filho estiver ativo, sem precisar adicionar classes ao HTML. Suporte para o "focus-within" varia entre navegadores, mas está disponível em muitos modernos.*/
 }
 
 form > input[type=submit] {
